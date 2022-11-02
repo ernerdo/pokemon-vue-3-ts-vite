@@ -10,7 +10,8 @@
     "lint": "eslint --ext .ts,vue --ignore-path .gitignore . --fix"
   },
   "dependencies": {
-    "vue": "^3.2.37"
+    "vue": "^3.2.37",
+    "vue-multiselect": "^3.0.0-alpha.2"
   },
   "devDependencies": {
     "@types/node": "^18.7.18",
