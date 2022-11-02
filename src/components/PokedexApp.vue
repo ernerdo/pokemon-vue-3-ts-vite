@@ -1,10 +1,22 @@
 <script setup lang="ts">
   import PokedexForm from '@/components/PokedexForm.vue'
   import PokedexScreen from '@/components/PokedexScreen.vue'
-  import Pokemon from '@/types/Pokemon'
+
   import type { Ref } from 'vue'
   import { onMounted, reactive, ref } from 'vue'
 
+  interface Pokemon {
+    name: string
+    sprites: {
+      front_default: string
+    }
+    stats: Array<{
+      base_stat: number
+      stat: {
+        name: string
+      }
+    }>
+  }
   const error: Ref<boolean> = ref(false)
   const loading: Ref<boolean> = ref(false)
   const pokemon: Pokemon = reactive({

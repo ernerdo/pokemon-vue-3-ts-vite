@@ -1,6 +1,17 @@
 <script setup lang="ts">
   import PokedexStat from '@/components/PokedexStat.vue'
-  import Pokemon from '@/types/Pokemon'
+  interface Pokemon {
+    name: string
+    sprites: {
+      front_default: string
+    }
+    stats: Array<{
+      base_stat: number
+      stat: {
+        name: string
+      }
+    }>
+  }
   interface Props {
     loading: boolean
     error: boolean
