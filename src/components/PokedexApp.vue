@@ -316,11 +316,9 @@
 
   .pokedex-left {
     background: var(--red);
-    /* height: inherit; */
     width: inherit;
     border-radius: 10px 0 0 10px;
     border: 1px solid black;
-    /* border-right: 10px solid black; */
     box-sizing: border-box;
     padding: 15px 20px;
   }
@@ -337,6 +335,7 @@
   .pokedex-left-bottom-lights {
     display: flex;
     align-items: flex-start;
+    margin-bottom: 10px;
   }
 
   .pokedex-left-bottom {
