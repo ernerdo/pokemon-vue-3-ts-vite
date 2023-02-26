@@ -364,6 +364,7 @@
     height: 100%;
     display: flex;
     align-items: center;
+    min-height: 280px;
   }
   .pokemon-info {
     padding: 0.8rem;
@@ -397,10 +398,9 @@
   }
   .pokedex-no-screen {
     width: 100%;
-    height: 100%;
     object-fit: cover;
-    /* border: 2px solid black; */
     border-radius: 10px;
+    min-height: 280px;
   }
   .stat-name {
     text-transform: capitalize;
